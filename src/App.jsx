@@ -120,7 +120,7 @@ function App() {
           path="*"
           element={
             <Navigate
-              to={isAuthenticated() ? "/dashboard" : "/login"}
+              to={isAuthenticated() ? "/login" : "/dashboard"}
               replace
             />
           }

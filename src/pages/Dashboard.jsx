@@ -15,7 +15,7 @@ function RedButton({ children, onClick, type = "button", className = "" }) {
     <button
       type={type}
       onClick={onClick}
-      className={`bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition-colors duration-300 ${className}`}
+      className={`bg-red-600 hover:bg-red-700 text-white font-semibold py-1 px-2 rounded transition-colors duration-300 ${className}`}
     >
       {children}
     </button>
@@ -41,22 +41,22 @@ export function Dashboard() {
           {/* Sección de usuario */}
           <div className="bg-[#1572E8] text-white py-4 px-4 text-lg font-bold w-1/5 flex items-center space-x-4">
             <div>
-              <h1 className="text-xl font-bold mb-4 ml-8">
+              <h1 className="text-md font-semibold mb-4 ml-8">
                 {user && user.nombre ? user.nombre : "Desconocido"}
               </h1>
-              <p className="text-lg ml-8">{user ? user.rol : "Desconocido"}</p>
+              <p className="text-md ml-8">{user ? user.rol : "Desconocido"}</p>
             </div>
           </div>
 
           {/* Sección de título + Botón "Cerrar sesión" */}
           <div className="bg-gradient-to-r from-[#00498B] to-[#001325] text-white py-4 px-8 text-lg font-bold w-4/5 flex justify-between items-center">
-            <h1 className="text-xl font-semibold">SISTEMA DE PROYECCIÓN DE CURSOS</h1>
+            <h1 className="text-lg font-semibold">SISTEMA DE PROYECCIÓN DE CURSOS</h1>
             <RedButton onClick={handleLogout}>Cerrar sesión</RedButton>
           </div>
         </div>
       </header>
 
-      <div className="flex justify-center items-center flex-1 mt-20">
+      <div className="flex justify-center items-center flex-1">
         <div className="bg-[#d7e9ff] p-10 rounded-lg max-w-4xl w-full">
           <div className="flex flex-wrap justify-center items-center gap-10">
             {/* Cargar archivos */}
@@ -106,7 +106,7 @@ export function Dashboard() {
       <footer className="bg-gradient-to-r from-[#00498B] to-[#001325] text-white py-4 fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center">
         <div className="text-center">
           <p>© 2025 Sistema de Proyección de Cursos</p>
-          <p className="mt-1">Contacto: <a href="mailto:fredy.perez.i@uniautonoma.edu.co" className="hover:text-blue-300">fredy.perez.i@uniautonoma.edu.co</a><a href="mailto:juan.delgado.c@uniautonoma.edu.co" className="hover:text-blue-300"> - juan.delgado.c@uniautonoma.edu.co</a></p>
+          <p className="mt-1">Contacto: <a href="mailto:fredy.perez.i@uniautonoma.edu.co" className="hover:text-blue-300">fredy.perez.i@uniautonoma.edu.co</a> <a> - </a> <a href="mailto:juan.delgado.c@uniautonoma.edu.co" className="hover:text-blue-300">juan.delgado.c@uniautonoma.edu.co</a><a> - </a> <a href="mailto:juan.valencia.c@uniautonoma.edu.co" className="hover:text-blue-300">juan.valencia.c@uniautonoma.edu.co</a></p>
 
         </div>
       </footer>

@@ -25,7 +25,7 @@ export function UpdatePassword() {
         <button
           type={type}
           onClick={onClick}
-          className={`bg-[#1572E8] hover:bg-[#0f5fc7] text-white font-semibold py-2 px-4 rounded transition-colors duration-300 ${className}`}
+          className={`bg-[#1572E8] hover:bg-[#0f5fc7] text-white font-semibold py-1 px-2 rounded transition-colors duration-300 ${className}`}
         >
           {children}
         </button>
@@ -105,13 +105,13 @@ export function UpdatePassword() {
               <img
                 src={menuIcon}
                 alt="Menu"
-                className="w-8 h-8 ml-5 mr-3"
+                className="w-6 h-6 ml-5"
                 onClick={toggleMenu}
               />
             </div>
             
             <div>
-              <h1 className="text-xl font-bold mb-4">
+              <h1 className="text-md font-semibold mb-4">
                 {user?.nombre || 'Desconocido'}
               </h1>
               <p className="text-lg">{user?.rol || 'Desconocido'}</p>
@@ -120,7 +120,7 @@ export function UpdatePassword() {
 
           {/* Sección de título */}
           <div className="bg-gradient-to-r from-[#00498B] to-[#001325] text-white py-8 px-8 text-xl font-bold w-4/5 flex justify-between items-center">
-            <h1 className="text-xl font-semibold">ACTUALIZAR CONTRASEÑA</h1>
+            <h1 className="text-lg font-semibold">ACTUALIZAR CONTRASEÑA</h1>
             <BlueButton onClick={rolnavigation}>Inicio</BlueButton>
           </div>
         </div>
@@ -191,7 +191,7 @@ export function UpdatePassword() {
         <footer className="bg-gradient-to-r from-[#00498B] to-[#001325] text-white py-4 fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center">
         <div className="text-center">
           <p>© 2025 Sistema de Proyección de Cursos</p>
-          <p className="mt-1">Contacto: <a href="mailto:fredy.perez.i@uniautonoma.edu.co" className="hover:text-blue-300">fredy.perez.i@uniautonoma.edu.co</a><a href="mailto:juan.delgado.c@uniautonoma.edu.co" className="hover:text-blue-300"> - juan.delgado.c@uniautonoma.edu.co</a></p>
+          <p className="mt-1">Contacto: <a href="mailto:fredy.perez.i@uniautonoma.edu.co" className="hover:text-blue-300">fredy.perez.i@uniautonoma.edu.co</a><a href="mailto:juan.delgado.c@uniautonoma.edu.co" className="hover:text-blue-300"> - juan.delgado.c@uniautonoma.edu.co</a><a> - </a> <a href="mailto:juan.valencia.c@uniautonoma.edu.co" className="hover:text-blue-300">juan.valencia.c@uniautonoma.edu.co</a></p>
 
         </div>
       </footer>

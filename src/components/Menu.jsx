@@ -50,25 +50,7 @@ export function Menu() {
         </p>
       </div>
 
-        {userRol === "Administrador" && (
-        <div
-          className="cursor-pointer hover:scale-110 transition-transform bg-white shadow-lg rounded-lg p-4 flex flex-col items-center w-auto"
-          onClick={() => navigate("/formulario-registro-usuarios")}
-        >
-          <img src={IconRegUser} alt="Upload" className="w-16 h-16" />
-          <p className="font-bold mb-6 text-[#00498B]">Rejistro Usuario</p>
-        </div>
-      )}
 
-      {userRol === "Administrador" && (
-        <div
-          className="cursor-pointer hover:scale-110 transition-transform bg-white shadow-lg rounded-lg p-4 flex flex-col items-center w-auto"
-          onClick={() => navigate("/lista-usuarios")}
-        >
-          <img src={IconModUser} alt="Upload" className="w-16 h-16" />
-          <p className="font-bold mb-6 text-[#00498B]">Modificar Usuario</p>
-        </div>
-      )}
 
     </div>
   );

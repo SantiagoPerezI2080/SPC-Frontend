@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const registroUsuariosApi = axios.create({
-    baseURL: "http://localhost:8000/registro_usuarios/api/v1/registro/",
+    baseURL: "https://spc-backend-r97v.onrender.com/registro_usuarios/api/v1/registro/",
 });
 
 export const getAllUsuarios = () => registroUsuariosApi.get("/");

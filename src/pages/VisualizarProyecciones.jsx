@@ -27,7 +27,7 @@ export function VisualizarProyecciones() {
     const fetchedUser = Cookies.get('user') ? JSON.parse(Cookies.get('user')) : null;
     setUser(fetchedUser);
 
-    axios.get('http://localhost:8000/api/uploaded/')
+    axios.get('https://spc-backend-r97v.onrender.com/api/uploaded/')
       .then(res => setTypes(res.data.types))
       .catch(() => toast.error('Error al listar archivos', { position: 'top-center' }));
   }, [location.state]);

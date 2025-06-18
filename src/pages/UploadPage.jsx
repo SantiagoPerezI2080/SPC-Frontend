@@ -68,7 +68,7 @@ export function UploadPage() {
     form.append('file', file);
 
     try {
-      await axios.post(`http://localhost:8000/api/upload/${type}/`, form, {
+      await axios.post(`https://spc-backend-r97v.onrender.com/api/upload/${type}/`, form, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       toast.success(`Archivo ${type.toUpperCase()} cargado`);
@@ -95,7 +95,7 @@ export function UploadPage() {
 
     try {
       await axios.post(
-        `http://localhost:8000${url}`,
+        `https://spc-backend-r97v.onrender.com${url}`,
         { anio, periodo, version },
         { headers: { Authorization: `Token ${Cookies.get('token')}` } }
       );

@@ -61,7 +61,7 @@ export function FilterPopup({ isOpen, onClose }) {
     if (filters.version) params.append('version', filters.version);
 
     try {
-      const response = await fetch(`http://localhost:8000/proyeccion/exportar-proyecciones?${params.toString()}`);
+      const response = await fetch(`https://spc-backend-r97v.onrender.com/proyeccion/exportar-proyecciones?${params.toString()}`);
       
       if (!response.ok) {
         const errorText = await response.text();

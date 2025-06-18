@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const registroUsuariosApi = axios.create({
-    baseURL: "http://localhost:8000/proyeccion/proyecciones/v1/Proyeccion/",
+    baseURL: "https://spc-backend-r97v.onrender.com/proyeccion/proyecciones/v1/Proyeccion/",
 });
 
 export const getAllProllecciones = () => registroUsuariosApi.get("/");

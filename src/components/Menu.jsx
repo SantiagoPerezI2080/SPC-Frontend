@@ -22,7 +22,7 @@ export function Menu() {
           onClick={() => navigate("/upload")}
         >
           <img src={uploadIcon} alt="Upload" className="w-16 h-16" />
-          <p className="font-bold mb-6 text-[#00498B]">Subir Archivos</p>
+          <p className="font-bold mb-6 text-[#00498B]">Cargar archivos</p>
         </div>
       )}
 
@@ -32,7 +32,7 @@ export function Menu() {
         onClick={() => navigate("/filtro-de-informacion")}
       >
         <img src={viewIcon} alt="Ver Información" className="w-16 h-16" />
-        <p className="font-bold mb-6 text-[#00498B]">Visualizar Proyeccion</p>
+        <p className="font-bold mb-6 text-[#00498B]">Visualizar Proyecciones</p>
       </div>
 
       {/* Gestión de usuarios o actualización de contraseña */}
@@ -49,9 +49,6 @@ export function Menu() {
           {userRol === "Administrador" ? "Gestión Usuarios" : "Actualizar Contraseña"}
         </p>
       </div>
-
-
-
     </div>
   );
 }

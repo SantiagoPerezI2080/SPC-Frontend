@@ -20,7 +20,7 @@ export function Login() {
     setLoading(true);
     try {
       data.correo = data.correo.toLowerCase();
-      const res = await axios.post("https://spc-backend-r97v.onrender.com/api/login/", data);
+      const res = await axios.post("http://localhost:8000/api/login/", data);
       const { token, user } = res.data;
       Cookies.set("token", token, { expires: 7 });
       Cookies.set("user", JSON.stringify(user), { expires: 7 });

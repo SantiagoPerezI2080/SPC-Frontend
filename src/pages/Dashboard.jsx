@@ -94,7 +94,7 @@ export function Dashboard() {
               />
               <Link to="/gestion-usuarios">
                 <button className="bg-[#1572E8] px-4 py-2 rounded-lg text-white font-bold hover:bg-[#0f5fc7] transition-all duration-300">
-                  Gestión de usuario
+                  Gestión de usuarios
                 </button>
               </Link>
             </div>
